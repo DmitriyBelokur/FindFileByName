@@ -2,3 +2,6 @@ test.cpp
 .vscode/launch.json
 .vscode/settings.json
 .vscode/tasks.json
+main
+.gitignore
+main

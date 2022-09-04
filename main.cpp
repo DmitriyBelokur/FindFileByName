@@ -54,13 +54,15 @@ void ListDirectory(const char* name_directory, const char* file_name){
         strcat(full_d_name, CONST_split_dir);
         const char* CONST_sub_dir = full_d_name;
         
-        //1 сформирова много поточность 
+        std::cout << std::this_thread::get_id() << "\n";
+        
+        
         // std::thread t_dir(ListDirectory(CONST_sub_dir, vec_directorys));
        
         //std::thread th(ListDirectory,CONST_sub_dir);
         //th.join();
 
-        ListDirectory(CONST_sub_dir, file_name);
+        //ListDirectory(CONST_sub_dir, file_name);
     }
     return;
 }
